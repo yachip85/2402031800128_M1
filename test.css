@@ -58,3 +58,17 @@ h2{
     top: 50px;
     left: 100px;
 }
+h2{
+    background-color: aqua;
+
+}
+#division1{
+    background-color: aquamarine;
+    float: left;
+    width: 40%;
+}
+#division2{
+    background-color: rgb(23, 100, 74);
+    float: right;
+    width: 40%;
+}
