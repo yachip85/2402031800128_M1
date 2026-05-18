@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example</title>
+</head>
+
+<body>
+
+<!-- getElementById -->
+<input type="text" id="myText"><br>
+<button onclick="getById()">Get By ID</button><br>
+
+<!-- getElementsByName -->
+<input type="text" name="myText"><br>
+<button onclick="getByName()">Get By Name</button><br>
+<!-- Form -->
+<form name="myForm">
+<input type="text" name="uname" placeholder="Enter Username"><br>
+<input type="text" name="pword" placeholder="Enter Password"><br>
+
+<!--email-->
+<input type="text" id="myText" placeholder="Enter Email"><br>
+<button onclick="checkMail()">Check Email</button>
+</form>
+
+<script>
+
+// getElementById()
+function getById()
+{
+    var txt = document.getElementById("myText");
+    alert(txt.value);
+}
+
+
+// getElementsByName()
+function getByName()
+{
+    var a = document.getElementsByName("myText")[0];
+    alert(a.value);
+}
+
+// Form Validation
+function f()
+{
+    var form = document.forms["myForm"];
+    var u = form.uname.value;
+    var p = form.pword.value;
+    if(u == "admin" && p == "123")
+    {
+        alert("Valid User");
+    }
+    else
+    {
+        alert("Invalid User");
+    }
+}
+
+// Email Validation using RegExp
+function checkMail()
+{
+    var a = document.getElementById("email").value;
+    var pattern = "^[\\w-\\.]+@[\\w]+\\.[\\w]+$";
+    var regex = new RegExp(pattern);
+    if(regex.test(a))
+    {
+        alert("Valid");
+    }
+    else
+    {
+        alert("Invalid");
+    }
+}
+
+
+</script>
+
+</body>
+</html>

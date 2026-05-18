@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Loops</title>
+</head>
+
+<body>
+
+<script>
+
+// For Loop
+document.write("<h3>For Loop</h3>");
+
+for(var i = 1; i <= 10; i++)
+{
+    document.write(i + "<br>");
+}
+
+
+// While Loop
+document.write("<h3>While Loop</h3>");
+
+var names = ["Yachi", "Priya", "Rahul", "Amit", "Neha"];
+
+var j = 0;
+
+while(j < names.length)
+{
+    document.write(names[j] + "<br>");
+    j++;
+}
+
+
+// Do While Loop
+document.write("<h3>Do While Loop</h3>");
+
+var k = 0;
+
+do
+{
+    document.write(names[k] + "<br>");
+    k++;
+}
+while(k < names.length);
+
+
+// Even Numbers
+document.write("<h3>Even Numbers</h3>");
+
+for(var i=2; i<=10; i=i+2)
+{
+    document.write(i + "<br>");
+}
+
+
+// Odd Numbers
+document.write("<h3>Odd Numbers</h3>");
+
+for(var i=1; i<=10; i=i+2)
+{
+    document.write(i + "<br>");
+}
+
+
+// Sum of Numbers
+document.write("<h3>Sum of Numbers</h3>");
+
+var sum = 0;
+
+for(var i=1; i<=5; i++)
+{
+    sum = sum + i;
+}
+
+document.write("Sum = " + sum + "<br>");
+
+
+// Factorial
+document.write("<h3>Factorial</h3>");
+
+var fact = 1;
+
+for(var i=1; i<=5; i++)
+{
+    fact = fact * i;
+}
+
+document.write("Factorial = " + fact + "<br>");
+
+
+// Reverse Counting
+document.write("<h3>Reverse Counting</h3>");
+
+for(var i=10; i>=1; i--)
+{
+    document.write(i + "<br>");
+}
+
+
+// Star Pattern
+document.write("<h3>Star Pattern</h3>");
+
+for(var i=1; i<=5; i++)
+{
+    document.write("*<br>");
+}
+
+
+// Multiplication Table
+document.write("<h3>Multiplication Table</h3>");
+
+var n = 5;
+
+for(var i=1; i<=10; i++)
+{
+    document.write(n + " x " + i + " = " + (n*i) + "<br>");
+}
+
+
+// User Login Attempt
+document.write("<h3>User Login Attempt</h3>");
+
+var attempts = 1;
+
+do
+{
+    document.write("Login Attempt : " + attempts + "<br>");
+    attempts++;
+}
+while(attempts <= 3);
+
+document.write("Maximum Login Attempts Finished");
+
+// Countdown Timer
+document.write("<h3>Countdown Timer</h3>");
+
+for(var i=10; i>=1; i--)
+{
+    document.write(i + "<br>");
+}
+
+document.write("Time Over<br><br>");
+
+
+
+// Password Validation
+document.write("<h3>Password Validation</h3>");
+
+var password = "Yachi123";
+
+if(password.length >= 8)
+{
+    document.write("Valid Password<br><br>");
+}
+else
+{
+    document.write("Invalid Password<br><br>");
+}
+
+
+
+// Mobile Battery Percentage Display
+document.write("<h3>Mobile Battery Percentage</h3>");
+
+var battery = 75;
+
+if(battery >= 80)
+{
+    document.write("Battery Full : " + battery + "%<br>");
+}
+else if(battery >= 50)
+{
+    document.write("Battery Medium : " + battery + "%<br>");
+}
+else
+{
+    document.write("Battery Low : " + battery + "%<br>");
+}
+
+//ticket booking system
+document.write("<h2>Ticket Booking System</h2>");
+
+var totalSeats = 5;
+var bookedSeats = 0;
+
+while(bookedSeats < totalSeats)
+{
+    bookedSeats++;
+
+    document.write("Ticket Booked Successfully<br>");
+    document.write("Seat Number : " + bookedSeats + "<br><br>");
+}
+
+document.write("All Tickets Sold Out");
+
+//find a largest number in array
+document.write("<h2>Largest Number in Array</h2>");
+
+var numbers = [12, 45, 78, 23, 89, 34];
+
+var largest = numbers[0];
+
+for(var i = 1; i < numbers.length; i++)
+{
+    if(numbers[i] > largest)
+    {
+        largest = numbers[i];
+    }
+}
+
+document.write("Array Elements : " + numbers + "<br><br>");
+
+document.write("Largest Number is : " + largest);
+
+//ATM PIN checking
+document.write("<h2>ATM PIN Checking</h2>");
+
+var correctPin = 1234;
+var enteredPin = 1234;
+
+if(enteredPin == correctPin)
+{
+    document.write("PIN Correct<br>");
+    document.write("Access Granted");
+}
+else
+{
+    document.write("Wrong PIN<br>");
+    document.write("Access Denied");
+}
+//user Login attempts
+var password = "1234";
+var userPass = "1234";
+var attempts = 1;
+
+do
+{
+    document.write("Attempt : " + attempts + "<br>");
+
+    if(userPass == password)
+    {
+        document.write("Login Success");
+        break;
+    }
+
+    attempts++;
+
+}
+while(attempts <= 3);
+
+</script>
+
+</body>
+</html>
