@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Operators</title>
+</head>
+
+<body>
+
+<h2>Arithmetic Operators</h2>
+<p id="demo1"></p>
+
+<h2>Data Types</h2>
+<p id="demo2"></p>
+
+<h2>Increment / Decrement</h2>
+<p id="demo3"></p>
+
+<h2>Comparison Operators</h2>
+<p id="demo4"></p>
+
+<h2>Even / Odd</h2>
+<p id="demo5"></p>
+
+<h2>Pass / Fail</h2>
+<p id="demo6"></p>
+
+<h2>Leap Year</h2>
+<p id="demo7"></p>
+
+<h2>Driving Eligibility</h2>
+<p id="demo8"></p>
+
+<h2>Temperature Check</h2>
+<p id="demo9"></p>
+
+<h2>Grade Calculator</h2>
+<p id="demo10"></p>
+
+<h2>ATM Withdrawal</h2>
+<p id="demo11"></p>
+
+<h2>Salary Bonus</h2>
+<p id="demo12"></p>
+
+<script>
+
+// Arithmetic Operators
+var x = 10;
+var y = 2;
+
+document.getElementById("demo1").innerHTML =
+"Add = " + (x+y) + "<br>" +
+"Sub = " + (x-y) + "<br>" +
+"Multi = " + (x*y) + "<br>" +
+"Divi = " + (x/y) + "<br>" +
+"Modul = " + (x%y);
+
+// Data Types
+var a = 10;
+var b = "Hello";
+var c = true;
+var d;
+var e = null;
+
+var f = {
+    name : "Yachi",
+    age : 20
+};
+
+document.getElementById("demo2").innerHTML =
+"Number : " + typeof(a) + "<br>" +
+"String : " + typeof(b) + "<br>" +
+"Boolean : " + typeof(c) + "<br>" +
+"Undefined : " + typeof(d) + "<br>" +
+"Null : " + e + "<br>" +
+"Object : " + typeof(f);
+
+// Increment / Decrement
+var p = 5;
+
+document.getElementById("demo3").innerHTML =
+"Post Increment = " + (p++) + "<br>" +
+"Pre Increment = " + (++p) + "<br>" +
+"Post Decrement = " + (p--) + "<br>" +
+"Pre Decrement = " + (--p);
+
+// Comparison Operators
+var m = 10;
+var n = 5;
+
+document.getElementById("demo4").innerHTML =
+"(m > n) = " + (m > n) + "<br>" +
+"(m < n) = " + (m < n) + "<br>" +
+"(m == n) = " + (m == n) + "<br>" +
+"(m === n) = " + (m === n) + "<br>" +
+"(m != n) = " + (m != n);
+
+// Even and Odd
+var num = 4;
+
+if(num % 2 == 0)
+{
+    document.getElementById("demo5").innerHTML = "Even Number";
+}
+else
+{
+    document.getElementById("demo5").innerHTML = "Odd Number";
+}
+
+// Pass and Fail
+var marks = 35;
+
+if(marks >= 35)
+{
+    document.getElementById("demo6").innerHTML = "Pass";
+}
+else
+{
+    document.getElementById("demo6").innerHTML = "Fail";
+}
+
+// Leap Year
+var year = 2024;
+
+if(year % 4 == 0)
+{
+    document.getElementById("demo7").innerHTML = "Leap Year";
+}
+else
+{
+    document.getElementById("demo7").innerHTML = "Not a Leap Year";
+}
+
+// Driving Eligibility
+var age = 20;
+
+if(age >= 18)
+{
+    document.getElementById("demo8").innerHTML = "Eligible for Driving";
+}
+else
+{
+    document.getElementById("demo8").innerHTML = "Not Eligible for Driving";
+}
+
+// Temperature Check
+var temp = 35;
+
+if(temp > 30)
+{
+    document.getElementById("demo9").innerHTML = "Weather is Hot";
+}
+else
+{
+    document.getElementById("demo9").innerHTML = "Weather is Cold";
+}
+
+// Grade Calculator
+var grade = 85;
+
+if(grade >= 90)
+{
+    document.getElementById("demo10").innerHTML = "Grade A";
+}
+else if(grade >= 75)
+{
+    document.getElementById("demo10").innerHTML = "Grade B";
+}
+else if(grade >= 50)
+{
+    document.getElementById("demo10").innerHTML = "Grade C";
+}
+else
+{
+    document.getElementById("demo10").innerHTML = "Fail";
+}
+
+// ATM Withdrawal
+var balance = 5000;
+var withdraw = 2000;
+
+if(withdraw <= balance)
+{
+    document.getElementById("demo11").innerHTML =
+    "Withdrawal Successful";
+}
+else
+{
+    document.getElementById("demo11").innerHTML =
+    "Insufficient Balance";
+}
+
+// Salary Bonus Calculator
+var salary = 40000;
+var bonus;
+
+if(salary >= 30000)
+{
+    bonus = 5000;
+}
+else
+{
+    bonus = 2000;
+}
+
+document.getElementById("demo12").innerHTML =
+"Salary = " + salary + "<br>" +
+"Bonus = " + bonus;
+
+</script>
+
+</body>
+</html>
