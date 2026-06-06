@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+// Arrow Function
+let welcome = function(name)
+{
+    return `Hello And Welcome ${name}`;
+};
+
+console.log(welcome("lallallaaa... yahooo"));
+
+
+// Math Object
+document.writeln(Math.E);
+document.writeln("<br>");
+
+var a = Math.pow(2,3);
+
+document.writeln(a);
+document.writeln("<br>");
+
+var num = Math.random();
+
+document.writeln(num);
+document.writeln("<br>");
+
+var num2 = parseInt(1 + (Math.random() * 100));
+
+document.writeln(num2);
+document.writeln("<br>");
+
+document.writeln(Math.ceil(2.7));
+document.writeln("<br>");
+
+document.writeln(Math.floor(2.7));
+document.writeln("<br>");
+
+document.writeln(Math.round(2.7));
+document.writeln("<br><br>");
+
+
+// Date Object
+const d = new Date(2026,6,31,10,33,30,0);
+document.getElementById("demo").innerHTML = d;
+
+
+// New Object
+var person = new Object();
+person.firstname = "Yachi";
+person.lastname = "Patel";
+person.sayhey = () =>
+{
+    alert("Welcome " + person.firstname + " " + person.lastname);
+};
+
+person.sayhey();
+
+
+// Using Literal Notation
+var person2 ={firstname: "Yachi",lastname: "Patel",
+    sayhi: function()
+    {
+        alert("Hey! " + person2.firstname + " " + person2.lastname);
+    }
+};
+person2.sayhi();
+
+
+</script>
+
+</body>
+</html>

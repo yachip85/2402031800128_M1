@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus and Change Event</title>
+</head>
+<body>
+Select Product :
+<select id="product">
+<option value="45000">AC</option>
+<option value="22000">TV</option>
+<option value="15000">Refrigerator</option>
+<option value="70000">Laptop</option>
+
+</select>
+
+<br><br>
+Net Price :<input type="text" id="prize"><br><br>
+Quantity :<input type="text" id="quantity"><br><br>
+Total Amount :<input type="text" id="amount">
+<script>
+
+var product = document.getElementById("product");
+var quantity = document.getElementById("quantity");
+var amount = document.getElementById("amount");
+var prize = document.getElementById("prize");
+
+// Change Event
+product.addEventListener("change", function()
+{
+    prize.value = product.value;
+});
+// Focus Event
+amount.addEventListener("focus", function()
+{
+    amount.value = product.value * quantity.value;
+});
+
+</script>
+</body>
+</html>

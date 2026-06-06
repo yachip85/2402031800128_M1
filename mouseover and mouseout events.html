@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On Off</title>
+</head>
+
+<body>
+
+<img 
+src="https://www.w3schools.com/js/pic_bulboff.gif"
+id="bulb"
+width="200">
+
+<script>
+
+var a = document.getElementById("bulb");
+
+
+// Mouse Over → Bulb ON
+a.addEventListener("mouseover", function()
+{
+    a.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+});
+
+
+// Mouse Out → Bulb OFF
+a.addEventListener("mouseout", function()
+{
+    a.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+});
+
+</script>
+
+</body>
+</html>
