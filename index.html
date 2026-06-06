@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Stay Hotel — Luxury Redefined</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="logo">Royal <span>Stay</span></div>
+
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="hamburger">
+    <span></span><span></span><span></span>
+  </label>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#rooms">Rooms</a></li>
+    <li><a href="#food">Dining</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#booking">Book</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Luxury Hotel Experience</h1>
+    <p>Stay • Dine • Relax</p>
+    <a href="#booking" class="btn">Book Your Stay</a>
+  </div>
+</section>
+
+<!-- ROOMS -->
+<section id="rooms">
+  <h2>Our Rooms</h2>
+  <p class="section-sub">Choose the perfect space for your stay</p>
+
+  <div class="tabs">
+    <input type="radio" name="room" id="deluxe" checked>
+    <input type="radio" name="room" id="premium">
+    <input type="radio" name="room" id="suite">
+
+    <div class="tab-buttons">
+      <label for="deluxe">Deluxe</label>
+      <label for="premium">Premium</label>
+      <label for="suite">Suite</label>
+    </div>
+
+    <!-- DELUXE -->
+    <div class="content deluxe">
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600" alt="Deluxe Single">
+          <div class="card-body">
+            <h3>Deluxe Single</h3>
+            <p>Cozy single room with city view</p>
+            <span class="price">₹5,000 / night</span>
+            <a href="#booking" class="btn-small">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=600" alt="Deluxe Double">
+          <div class="card-body">
+            <h3>Deluxe Double</h3>
+            <p>Spacious room for two guests</p>
+            <span class="price">₹6,500 / night</span>
+            <a href="#booking" class="btn-small">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600" alt="Deluxe Twin">
+          <div class="card-body">
+            <h3>Deluxe Twin</h3>
+            <p>Two beds, perfect for friends</p>
+            <span class="price">₹6,800 / night</span>
+            <a href="#booking" class="btn-small">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PREMIUM -->
+    <div class="content premium">
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600" alt="Premium King">
+          <div class="card-body">
+            <h3>Premium King</h3>
+            <p>King-size bed with panoramic view</p>
+            <span class="price">₹8,000 / night</span>
+            <a href="#booking" class="btn-small">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600" alt="Premium Family">
+          <div class="card-body">
+            <h3>Premium Family</h3>
+            <p>Ideal for families up to 4 guests</p>
+            <span class="price">₹9,500 / night</span>
+            <a href="#booking" class="btn-small">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.lzxTmkT_jAMrNnvuscBiEgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3">
+          <div class="card-body">
+            <h3>Premium Balcony</h3>
+            <p>Private balcony with skyline view</p>
+            <span class="price">₹10,000 / night</span>
+            <a href="#booking" class="btn-small">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUITE -->
+    <div class="content suite">
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600" alt="Royal Suite">
+          <div class="card-body">
+            <h3>Royal Suite</h3>
+            <p>Spacious suite with living area</p>
+            <span class="price">₹12,000 / night</span>
+            <a href="#booking" class="btn-small">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?w=600" alt="Presidential Suite">
+          <div class="card-body">
+            <h3>Presidential Suite</h3>
+            <p>Ultimate luxury for VIP guests</p>
+            <span class="price">₹18,000 / night</span>
+            <a href="#booking" class="btn-small">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600" alt="Honeymoon Suite">
+          <div class="card-body">
+            <h3>Honeymoon Suite</h3>
+            <p>Romantic setup for couples</p>
+            <span class="price">₹15,000 / night</span>
+            <a href="#booking" class="btn-small">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- DINING -->
+<section id="food">
+  <h2>Restaurant</h2>
+  <p class="section-sub">A world of flavors under one roof</p>
+
+  <div class="tabs">
+    <!-- Radio Buttons for all categories -->
+    <input type="radio" name="food" id="india" checked>
+    <input type="radio" name="food" id="south-india">
+    <input type="radio" name="food" id="punjab">
+    <input type="radio" name="food" id="china">
+    <input type="radio" name="food" id="japan">
+    <input type="radio" name="food" id="korea">
+    <input type="radio" name="food" id="italy">
+    <input type="radio" name="food" id="cold-drinks">
+    <input type="radio" name="food" id="wine">
+    <input type="radio" name="food" id="dessert">
+
+    <!-- Tab Buttons Layout -->
+    <div class="tab-buttons">
+      <label for="india">India</label>
+      <label for="south-india">South India</label>
+      <label for="punjab">Punjab</label>
+      <label for="china">China</label>
+      <label for="japan">Japan</label>
+      <label for="korea">Korea</label>
+      <label for="italy">Italy</label>
+      <label for="cold-drinks">Cold Drinks</label>
+      <label for="wine">Wine</label>
+      <label for="dessert">Dessert</label>
+    </div>
+
+    <!-- 1. INDIA -->
+  <!-- 1. INDIA -->
+    <div class="content india">
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=600&auto=format&fit=crop&q=80" alt="Indian Thali">
+          <div class="card-body"><h3>Indian Thali</h3><span class="price">₹350</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&auto=format&fit=crop&q=80" alt="Butter Chicken">
+          <div class="card-body"><h3>Butter Chicken</h3><span class="price">₹420</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&auto=format&fit=crop&q=80" alt="Hyderabadi Biryani">
+          <div class="card-body"><h3>Hyderabadi Biryani</h3><span class="price">₹380</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. SOUTH INDIA -->
+    <div class="content south-india">
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=80" alt="Masala Dosa">
+          <div class="card-body"><h3>Masala Dosa</h3><span class="price">₹180</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600&auto=format&fit=crop&q=80" alt="Steamed Idli">
+          <div class="card-body"><h3>Steamed Idli</h3><span class="price">₹130</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?w=600&auto=format&fit=crop&q=80" alt="Medu Vada">
+          <div class="card-body"><h3>Medu Vada</h3><span class="price">₹140</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. PUNJAB -->
+    <div class="content punjab">
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=600&auto=format&fit=crop&q=80" alt="Chole Bhature">
+          <div class="card-body"><h3>Chole Bhature</h3><span class="price">₹199</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=600&auto=format&fit=crop&q=80" alt="Dal Makhani">
+          <div class="card-body"><h3>Dal Makhani</h3><span class="price">₹260</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600&auto=format&fit=crop&q=80" alt="Amritsari Kulcha">
+          <div class="card-body"><h3>Amritsari Kulcha</h3><span class="price">₹180</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. CHINA -->
+    <div class="content china">
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&auto=format&fit=crop&q=80" alt="Hakka Noodles">
+          <div class="card-body"><h3>Hakka Noodles</h3><span class="price">₹250</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600&auto=format&fit=crop&q=80" alt="Dim Sum">
+          <div class="card-body"><h3>Dim Sum</h3><span class="price">₹320</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1582450871972-ab5ca641643d?w=600&auto=format&fit=crop&q=80" alt="Manchurian">
+          <div class="card-body"><h3>Manchurian</h3><span class="price">₹280</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. JAPAN -->
+    <div class="content japan">
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=600&auto=format&fit=crop&q=80" alt="Sushi Maki">
+          <div class="card-body"><h3>Sushi Maki</h3><span class="price">₹550</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&auto=format&fit=crop&q=80" alt="Chicken Ramen">
+          <div class="card-body"><h3>Chicken Ramen</h3><span class="price">₹480</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=600&auto=format&fit=crop&q=80" alt="Prawn Tempura">
+          <div class="card-body"><h3>Prawn Tempura</h3><span class="price">₹420</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. KOREA -->
+    <div class="content korea">
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1553163147-622ab57be1c7?w=600&auto=format&fit=crop&q=80" alt="Bibimbap">
+          <div class="card-body"><h3>Bibimbap</h3><span class="price">₹400</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1635363638580-c2809d049eee?w=600&auto=format&fit=crop&q=80" alt="Kimchi Stew">
+          <div class="card-body"><h3>Kimchi Stew</h3><span class="price">₹450</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?w=600&auto=format&fit=crop&q=80" alt="Korean BBQ">
+          <div class="card-body"><h3>Korean BBQ</h3><span class="price">₹650</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. ITALY -->
+    <div class="content italy">
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=80" alt="Margherita Pizza">
+          <div class="card-body"><h3>Margherita Pizza</h3><span class="price">₹399</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=600&auto=format&fit=crop&q=80" alt="Creamy Pasta">
+          <div class="card-body"><h3>Creamy Pasta</h3><span class="price">₹350</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=600&auto=format&fit=crop&q=80" alt="Lasagna">
+          <div class="card-body"><h3>Lasagna</h3><span class="price">₹450</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. COLD DRINKS -->
+    <div class="content cold-drinks">
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=600&auto=format&fit=crop&q=80" alt="Cola Float">
+          <div class="card-body"><h3>Cola Float</h3><span class="price">₹90</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80" alt="Mint Mojito">
+          <div class="card-body"><h3>Mint Mojito</h3><span class="price">₹150</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&auto=format&fit=crop&q=80" alt="Lemon Iced Tea">
+          <div class="card-body"><h3>Lemon Iced Tea</h3><span class="price">₹120</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. WINE -->
+    <div class="content wine">
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&auto=format&fit=crop&q=80" alt="Red Wine">
+          <div class="card-body"><h3>Red Wine</h3><span class="price">₹1200</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=1200&auto=format&fit=crop&q=80" alt="White Wine">
+          <div class="card-body"><h3>White Wine</h3><span class="price">₹1400</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1532634922-8fe0b757fb13?w=600&auto=format&fit=crop&q=80" alt="Champagne">
+          <div class="card-body"><h3>Champagne</h3><span class="price">₹2500</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. DESSERT -->
+    <div class="content dessert">
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1605270012917-bf157c5a9541?w=600&auto=format&fit=crop&q=80" alt="Gulab Jamun">
+          <div class="card-body"><h3>Gulab Jamun</h3><span class="price">₹80</span></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&auto=format&fit=crop&q=80" alt="Sizzling Brownie">
+          <div class="card-body"><h3>Sizzling Brownie</h3><span class="price">₹180</span></div>
+        </div>
+        <div class="card">
+        <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=1200&auto=format&fit=crop&q=80" alt="Cheesecake">
+         <div class="card-body"><h3>Cheesecake</h3><span class="price">₹220</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <p class="section-sub">A glimpse into our world of luxury</p>
+
+  <div class="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600" alt="Hotel Lobby">
+    <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=600" alt="Swimming Pool">
+    <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600" alt="Restaurant">
+    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600" alt="Spa">
+    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=600" alt="Gym">
+    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600" alt="Rooftop">
+    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600" alt="Lounge">
+    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600" alt="Bathroom">
+  </div>
+</section>
+
+<!-- BOOKING FORM -->
+<section id="booking">
+  <h2>Book Your Stay</h2>
+  <p class="section-sub">Reserve your luxury experience today</p>
+
+  <form class="booking-form" id="bookingForm">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="John Doe" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="+91 9876543210" required>
+      </div>
+      <div class="form-group">
+        <label for="guests">Guests</label>
+        <select id="guests" required>
+          <option value="">Select</option>
+          <option>1 Guest</option>
+          <option>2 Guests</option>
+          <option>3 Guests</option>
+          <option>4+ Guests</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="checkin">Check-In Date</label>
+        <input type="date" id="checkin" required>
+      </div>
+      <div class="form-group">
+        <label for="checkout">Check-Out Date</label>
+        <input type="date" id="checkout" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group full">
+        <label for="room-type">Room Type</label>
+        <select id="room-type" required>
+          <option value="">Select Room</option>
+          <option>Deluxe Single — ₹5,000</option>
+          <option>Deluxe Double — ₹6,500</option>
+          <option>Premium King — ₹8,000</option>
+          <option>Premium Family — ₹9,500</option>
+          <option>Royal Suite — ₹12,000</option>
+          <option>Presidential Suite — ₹18,000</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group full">
+        <label for="message">Special Requests (optional)</label>
+        <textarea id="message" rows="3" placeholder="Any preferences..."></textarea>
+      </div>
+    </div>
+
+    <button type="submit" class="btn">Confirm Booking</button>
+    <p id="success-msg" class="success">✅ Thank you! Your booking request has been received. We'll contact you shortly.</p>
+  </form>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="icon">📞</div>
+      <h3>Phone</h3>
+      <p>+91 9876543210</p>
+    </div>
+    <div class="contact-card">
+      <div class="icon">📧</div>
+      <h3>Email</h3>
+      <p>hotel@royalstay.com</p>
+    </div>
+    <div class="contact-card">
+      <div class="icon">📍</div>
+      <h3>Address</h3>
+      <p>Mumbai, India</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Royal Stay Hotel. All Rights Reserved.</p>
+  <p class="socials">Follow us: <a href="#">Facebook</a> • <a href="#">Instagram</a> • <a href="#">Twitter</a></p>
+</footer>
+
+
+<script>
+
+document.getElementById("bookingForm")
+.addEventListener("submit", async function(e){
+
+    e.preventDefault();
+
+    const data = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        guests: document.getElementById("guests").value,
+        checkin: document.getElementById("checkin").value,
+        checkout: document.getElementById("checkout").value,
+        roomType: document.getElementById("room-type").value,
+        message: document.getElementById("message").value
+    };
+
+    try {
+
+        const response = await fetch("/booking", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+
+        if(result.success){
+
+            const msg =
+            document.getElementById("success-msg");
+
+            msg.style.display = "block";
+
+            msg.innerHTML =
+            "✅ Booking saved successfully!";
+
+            document.getElementById("bookingForm")
+            .reset();
+
+        } else {
+
+            alert(result.message);
+
+        }
+
+    } catch(error){
+
+        console.log(error);
+
+        alert("Server Error");
+
+    }
+
+});
+
+</script>
+</body>
+</html>
